@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Efekty na obrazach</h2>
+    </header>
+    <main>
+      <section class="effect-container">
+        <img id="pszczola" src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" />
+        <section class="checkboxes-container">
+          <input type="radio" value="blur" name="efekt" id="blur"/>
+          <label for="blur">Blur</label>
+        </section>
+        <section class="checkboxes-container">
+          <input type="radio" value="sepia" name="efekt" id="sepia" />
+          <label for="sepia">Sepia</label>
+        </section>
+        <section class="checkboxes-container">
+          <input type="radio" value="negatyw" name="efekt" id="negatyw"/>
+          <label for="negatyw">Negatyw</label>
+        </section>
+        <button onclick="approve()">Zastosuj</button>
+      </section>
+      <section class="effect-container">
+        <img id="pomarancza" src="pomarancza.jpg" alt="drzwo pomarańczy">
+        <section class="buttons-container">
+            <button onclick="colorfull()">Kolorowy</button>
+            <button onclick="blackAndWhite()">Czarno-biały</button>
+        </section>
+      </section>
+      <section class="effect-container">
+            <img id="owoce" src="owoce.jpg" alt="Kosz pełen owoców">
+            <input type="range" name="" id="transparent-effect" min="0" max="100" value="100">
+            <button onclick="transparent()">Zastosuj</button>
+      </section>
+      <section class="effect-container">
+        <img id="zolw" src="zolw.jpg" alt="Żółw w wodzie">
+        <input id="brightness-effect" type="range" min="0" max="250">
+        <button onclick="brightness()">Zastosuj</button>
+      </section>
+    </main>
+    <footer>
+        <p><a href="http://www.css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: 00000000</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firma IT</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="logo-container">
+          <img src="logo.png" alt="firma it" />
+        </div>
+        <div class="menu">
+          <a href="index.html">Strona Główna</a>
+          <a href="uslugi.html">Usługi</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </header>
+      <article class="baner">
+        <img src="animacja.gif" alt="Usługi informatyczne" />
+      </article>
+      <article class="main-part">
+        <h2>Kontakt</h2>
+        <table style="width: 100%">
+          <tr>
+            <td>Imię:</td>
+            <td><input type="text" id="name" /></td>
+          </tr>
+          <tr>
+            <td>Nazwisko:</td>
+            <td><input type="text" id="lastname" /></td>
+          </tr>
+          <tr>
+            <td>E-mail:</td>
+            <td><input type="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td>Zgłoszenie:</td>
+            <td>
+              <textarea name="" id="textarea" cols="40" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="checkbox-container">
+              <input type="checkbox" name="" id="checkbox" />
+              <p>Zapoznałam/em się z regulaminem</p>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button id="reset">Resetuj</button
+              ><button id="send">Prześlij</button>
+            </td>
+          </tr>
+        </table>
+        <p class="line"></p>
+        <p id="response"></p>
+      </article>
+      <footer>
+        <p>Autor strony <b>00000000</b></p>
+      </footer>
+    </div>
+  </body>
+
+  <script>
+    const name = document.getElementById("name");
+    const lastname = document.getElementById("lastname");
+    const email = document.getElementById("email");
+    const textarea = document.getElementById("textarea");
+    const checkbox = document.getElementById("checkbox");
+    const response = document.getElementById("response");
+    const reset = document.getElementById("reset");
+    const send = document.getElementById("send");
+
+    send.addEventListener("click", () => {
+        if (checkbox.checked === true) {
+            response.innerText = (name.value).toUpperCase() + " " + (lastname.value).toUpperCase() + " Treść twojej sprawy: " + textarea.value
+            response.style.color = "navy";
+        } else {
+            response.innerText = "Musisz zapoznać się z regulaminem";
+            response.style.color = "red";
+        }
+    });
+
+    
+    reset.addEventListener("click", () => {
+        name.value = "";
+        lastname.value = ""
+        email.value = ""
+        textarea.value = ""
+        checkbox.checked = false
+      });
+
+  </script>
+</html>

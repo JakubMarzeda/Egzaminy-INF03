@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <section class="main-container">
+      <aside>
+        <img src="obraz.png" alt="promocje" />
+        <h2>Sprawdź promocje</h2>
+        <table>
+          <tr>
+            <th>co?</th>
+            <th>ile taniej?</th>
+          </tr>
+          <tr>
+            <th>ubrania</th>
+            <th>15%</th>
+          </tr>
+          <tr>
+            <th>buty</th>
+            <th>15%</th>
+          </tr>
+        </table>
+      </aside>
+      <section class="form-container">
+        <header>
+          <h2>Zarejestruj się w sklepie</h2>
+        </header>
+        <main>
+          <section class="button-container">
+            <button onclick="showFirstContainer()">Klient</button>
+            <button onclick="showSecondContainer()">Adres</button>
+            <button onclick="showThirdContainer()">Kontakt</button>
+          </section>
+          <section id="first-container">
+            <p>Imię</p>
+            <input class="form-input" id="name" type="text" placeholder="Wpisz dane..." />
+            <p>Nazwisko</p>
+            <input class="form-input" id="lastname" type="text" />
+            <p>Data urodzenia</p>
+            <input class="form-input" id="date" type="date" />
+          </section>
+          <section id="second-container">
+            <p>Ulica</p>
+            <input class="form-input" id="street" type="text" />
+            <p>Numer</p>
+            <input class="form-input" id="street-number" type="number" />
+            <p>Miasto</p>
+            <input class="form-input" id="city" type="text" />
+          </section>
+          <section id="third-container">
+            <p>Numer komórkowy</p>
+            <input class="form-input" id="tel-input" type="tel" />
+            <section>
+              <input id="checkbox" name="accept-rodo" type="checkbox" />
+              <label for="accept-rodo">Akceptuję RODO</label>
+            </section>
+            <button onclick="handleConfirmData()">Zatwierdź</button>
+          </section>
+        </main>
+        <section id="progress-container">
+          <section id="progress-bar"></section>
+        </section>
+      </section>
+    </section>
+    <footer><h4>Rejestrację do sklepu wykonał: 00000000</h4></footer>
+  </body>
+</html>

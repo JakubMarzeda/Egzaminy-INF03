@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro turystyczne</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Zwiedzamy Polskę</h1>
+    </header>
+    <main>
+        <section class="left-container">
+            <button onclick="previousImg()"><</button>
+        </section>
+        <section class="middle-container">
+            <img id="main-image" src="1.jpg" alt="Aktywne zdjęcie">
+        </section>
+        <section class="right-container">
+            <button onclick="nextImg()">></button>
+        </section>
+    </main>
+    <section class="small-screens">
+        <img src="1.jpg" alt="Gdańsk">
+        <img src="2.jpg" alt="Kraków">
+        <img src="3.jpg" alt="Niedzica">
+        <img src="4.jpg" alt="Pieniny">
+        <img src="5.jpg" alt="Szklarska Poręba">
+        <img src="6.jpg" alt="Tatry">
+        <img src="7.jpg" alt="Wrocław">
+    </section>
+    <footer>
+        <h3>Autorem galerii jest:</h3>
+        <p>000000000</p>
+        <a href="http://pixabay.com" target="_blank">Więcej zdjęć</a>
+    </footer>
+
+    <script>
+        let currentImgIndex = 1;
+        const imgsCount = 7;
+
+        function previousImg() {
+            currentImgIndex--;
+            if (currentImgIndex < 1) {
+                currentImgIndex = imgsCount;
+            }
+            updateImg();
+        }
+
+        function nextImg() {
+            currentImgIndex++;
+            if (currentImgIndex > imgsCount) {
+                currentImgIndex = 1;
+            }
+            updateImg();
+        }
+
+        function updateImg() {
+            let img = document.getElementById("main-image");
+            img.src = currentImgIndex + ".jpg";
+        }
+
+        <!-- Dodatkowa funkcjonalność:
+        Można zrobić że gdy klikniemy na miniaturkę to zmieni się na główne
+        czyli pobieramy miniaturki i po onclicku albo clicku zmieniamy src tego glownego na to co kliknelismy i jest git -->
+    </script>
+</body>
+</html>

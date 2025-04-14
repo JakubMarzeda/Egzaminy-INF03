@@ -1,0 +1,63 @@
+* {
+    font-family: Roboto, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: Crimson;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+    padding: 10px;
+}
+
+.first-main-container {
+    background-color: MistyRose;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 50px 10px 50px;
+    border: 1px solid crimson;
+}
+
+.first-main-container img {
+    float: left;
+    height: 100%;
+}
+
+.offers-container {
+    display: flex;
+}
+
+.offers-container section {
+    background-color: snow;
+    height: 450px;
+    width: 21%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid crimson;
+}
+
+footer {
+    background-color: crimson;
+    color: white;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+h4 {
+    font-size: 180%;
+    text-align: center;
+    color: crimson;
+}
+
+a {
+    color: white;
+}

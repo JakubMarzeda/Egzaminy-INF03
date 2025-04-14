@@ -1,0 +1,20 @@
+KWERENDY (zapytania) here:
+
+(CURRENT_TIME - ustawia aktualny czas a CURRENT_DATE ustawia aktualną datę dnia)
+UPDATE wagi SET czas=CURRENT_TIME and dzien=CURRENT_DATE WHERE lokalizacje_id BETWEEN 2 and 4; 
+
+SELECT ulica FROM lokalizacje;
+
+FLOOR(RAND()*10 + 1) - zwraca losową liczbę od 1 do 10
+INSERT INTO wagi (lokalizacje_id, waga, rejestracja, dzien, czas) VALUES (5, FLOOR(RAND()*10+1), 'DW12345', CURRENT_DATE, CURRENT_TIME);
+
+INNER JOIN służy do złączenia tabel w bazie danych aby wyświetlić te dane
+SELECT rejestracja, waga, dzien, czas, ulica FROM wagi W INNER JOIN lokalizacje L ON W.lokalizacje_id = L.id WHERE waga > 5;
+
+**********************
+th - nagłówek tabeli * 
+td - komórka tabeli  * MEGAAA WAŻNEE!!!!!!
+tr - wiersz tabeli   *
+**********************
+
+

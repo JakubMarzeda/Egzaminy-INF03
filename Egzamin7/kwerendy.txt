@@ -1,0 +1,7 @@
+SELECT imie, nazwisko, stanowisko FROM kadra WHERE stanowisko = "fryzjer" OR stanowisko = "stylista";
+
+SELECT COUNT(*), MAX(cena) FROM uslugi WHERE rodzaj = 2;
+
+SELECT nazwa, imie FROM kadra K INNER JOIN uslugi U ON K.id = U.kadra_id WHERE rodzaj > 1;
+
+ALTER TABLE uslugi ADD opinia TEXT;

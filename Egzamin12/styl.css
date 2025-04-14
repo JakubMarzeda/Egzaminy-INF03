@@ -1,0 +1,69 @@
+body {
+    background-color: #E0F7FA;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+header {
+    background-color: #00838F;
+    height: 200px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    background-color: #006064;
+    padding: 15px;
+    margin: 0;
+}
+
+menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+main section {
+    height: 350px;
+    width: 32%;
+}
+
+footer {
+    background-color: #006064;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+ul  li{
+    text-align: left;
+}
+
+button {
+    background-color: #00838F;
+    color: white;
+}
+
+button:hover {
+    background-color: #80DEEA;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

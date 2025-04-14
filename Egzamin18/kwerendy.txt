@@ -1,0 +1,7 @@
+SELECT imie, nazwisko FROM autorzy ORDER BY nazwisko ASC;
+
+INSERT INTO czytelnicy (imie, nazwisko, kod) VALUES ('Ewa', 'Kowalska', '145321');
+
+SELECT tytul FROM ksiazki WHERE id_kategoria = 2; LUB SELECT tytul FROM ksiazki KS INNER JOIN kategorie KT ON KS.id_kategoria = KT.id WHERE nazwa = 'dramat';
+
+SELECT tytul FROM ksiazki K INNER JOIN wypozyczenia W ON K.id = W.id_ksiazka WHERE W.id_czytelnik = 2;

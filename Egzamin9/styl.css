@@ -1,0 +1,70 @@
+* {
+    font-family: "Bookman Old Style", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+}
+
+header > section {
+    background-color: DarkCyan;
+    color: white;
+    width: 50%;
+    height: 100px;
+    letter-spacing: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: DarkCyan;
+    color: white;
+}
+
+main > section {
+    background-color: azure;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 4px 4px 8px dimgray;
+}
+
+main > section > img {
+    width: 100%;
+}
+
+p, h2, h3 {
+    margin: 15px;   
+}
+
+a {
+    color: white;
+}
+
+h5 {
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+h5:hover {
+    background-color: LightSeaGreen;
+}
+
+blockquote {
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    font-style: italic;
+}
+
+#osoba-2, #osoba-3 {
+    display: none;
+}

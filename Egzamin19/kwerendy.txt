@@ -1,0 +1,7 @@
+SELECT imie, nazwisko FROM pracownicy WHERE staz < 5;
+
+SELECT AVG(pensja), nazwa FROM pracownicy P INNER JOIN stanowiska S ON P.stanowiska_id = S.id GROUP BY nazwa;
+
+SELECT imie, nazwisko, pensja FROM pracownicy WHERE pensja = (SELECT MAX(pensja) FROM pracownicy);
+
+UPDATE pracownicy SET staz = staz + 1;

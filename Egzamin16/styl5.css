@@ -1,0 +1,59 @@
+* {
+    font-family: tahoma;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-color: #7DA453;
+    color: white;
+    height: 120px;
+}
+
+.first-header, .second-header {
+    width: 40%;
+}
+
+.third-header {
+    width: 20%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar-block {
+    background-color: #AED581;
+    width: 200px;
+    height: 100px;
+    margin: 7px;
+    border: 1px solid #7DA453;
+}
+
+.calendar-block:hover {
+    background-color: #7DA453;
+    color: white;
+}
+
+footer {
+    background-color: #7DA453;
+    color: white;
+    padding: 5px;
+}
+
+h5 {
+    text-align: center;
+}
+
+form {
+    padding-top: 50px;
+}

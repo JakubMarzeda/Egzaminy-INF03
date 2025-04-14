@@ -1,0 +1,7 @@
+SELECT imie, miot FROM swinki WHERE rasy_id = 1 and MONTH(data_ur) = 7;  // MONTH(data_ur) zwraca numer miesiąca czyli jeżeli = 7 to jest to lipiec
+
+SELECT DISTINCT data_ur, miot, rasa FROM swinki S INNER JOIN rasy R ON S.rasy_id = R.id WHERE r.id = 1;
+
+SELECT imie, cena, opis FROM swinki WHERE rasy_id = 1;
+
+SELECT rasa FROM rasy;

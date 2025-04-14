@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Formularz rejestracyjny konferencji <em><strong>Nasze Kwiaty</strong></em></h1>
+    </header>
+    <main>
+        <form>
+            <section id="first-block" class="first-block">
+                <h2>Dane osobowe</h2>
+                <input id="name" type="text" placeholder="Wpisz imię..." required>
+                <input id="lastname" type="text" placeholder="Wpisz nazwisko..." required>
+                <button type="button" onclick="showSecondBlock()">Następna karta</button>
+            </section> 
+            <section id="second-block" class="second-block">
+                <h2>Dane kontaktowe</h2>
+                <input type="email" placeholder="Twój e-mail...">
+                <input type="tel" placeholder="Twój numer telefonu...">
+                <button type="button" onclick="showThirdBlock()">Następna karta</button>
+            </section>       
+            <section id="third-block" class="third-block">
+                <h2>Hasło do logowania</h2>
+                <input id="password" type="password" placeholder="Podaj hasło">
+                <input id="confirm-password" type="password" placeholder="Powtórz hasło">
+                <button type="button" onclick="approve()">Zatwierdź</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <video controls><source src="motyl.mp4" type="video/mp4">Przeglądarka nie obsługuje tego formatu.</video>
+        </section>
+        <section>
+            <h3>Plan konferencji</h3>
+            <table>
+                <tr>
+                    <td>09:00 - 12:00</td>
+                    <td>Pielęgnacja roślin</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Targi kwiatowe</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p><a href="https://kwiaty.pl">Internetowa Kwiaciarnia</a></p>
+        </section>
+        <section>
+            <p>Formularz wykonał: 00000000</p>
+        </section>
+    </footer>
+</body>
+</html>

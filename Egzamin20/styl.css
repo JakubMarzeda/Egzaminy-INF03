@@ -1,0 +1,92 @@
+* {
+    font-family: Georgia;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+
+menu {
+    display: flex;
+    gap: 20px;
+}
+
+menu {
+    display: flex;
+    background-color: navy;
+    padding: 20px;
+}
+
+.select-option-input {
+    color: silver;
+    margin: 50px;   
+}
+
+button[type="submit"] {
+    margin-left: 50px;
+}
+
+.select-option-input:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+menu {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+.left-container, .right-container {
+    background-color: azure;
+    height: 550px;
+}
+
+.left-container {
+    width: 70%;
+}
+
+.right-container {
+    width: 30%;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
+
+table {
+    border: 1px solid navy;
+    margin: auto;
+    width: 70%;
+}
+
+tr:hover {
+    background-color: skyblue;
+}
+
+.right-container img {
+    width: 90%;
+}

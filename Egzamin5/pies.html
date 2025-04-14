@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasze zdjęcia</title>
+    <link rel="stylesheet" href="styl6.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Nasze psy</h2>
+    </header>
+    <section class="main-container">
+        <aside class="left-container">
+            <h1>Wybierz</h1>
+            <ul>
+                <li><a href="pies.html">Psy</a></li>
+                <li><a href="kot.html">Koty</a></li>
+                <li>Konie</li>
+                <li>Rybki</li>
+                <li>Inne zdjęcia</li>
+            </ul>
+            <h5><a href="index.html">Do strony głównej</a></h5>
+        </aside>
+        <main class="right-container">
+            <section class="top-container">
+                <h2>Kliknij na zdjęcie</h2>
+                <img src="pies1.jpg" id="pies1" alt="psy" onmouseover="over('pies1', 'pies1-odbicie.jpg')" onmouseout="out('pies1', 'pies1.jpg')" onclick="clicked('pies1-odbicie.jpg')">
+                <img src="pies2.jpg" id="pies2" alt="psy" onmouseover="over('pies2', 'pies2-odbicie.jpg')" onmouseout="out('pies2', 'pies2.jpg')" onclick="clicked('pies2-odbicie.jpg')">
+                <img src="pies3.jpg" id="pies3" alt="psy" onmouseover="over('pies3', 'pies3-odbicie.jpg')" onmouseout="out('pies3', 'pies3.jpg')" onclick="clicked('pies3-odbicie.jpg')">
+            </section>
+            <section class="bottom-container">
+                <p><img src="pies2.jpg" alt="Wybrany pies" id="zmiana"></p>
+            </section>  
+        </main>
+    </section>
+    <footer>Galerię zdjęć opracował: <b>0000000000</b></footer>
+</body>
+</html>

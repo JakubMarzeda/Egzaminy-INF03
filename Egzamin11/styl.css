@@ -1,0 +1,76 @@
+* {
+    font-family: Georgia;
+    color: white;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, footer {
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+main {
+    display: flex;
+}
+
+.left-container, .right-container, .middle-container {
+    background-color: lightsalmon;
+    height: 527px;
+}
+
+.left-container, .right-container {
+    width: 15%;
+}
+
+.middle-container {
+    width: 70%;
+}
+
+.small-screens {
+    background-color: maroon;
+    height: 70px;
+}
+
+button {
+    background-color: lightsalmon;
+    color: maroon;
+    border: 0;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+.middle-container img{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+    transition: transform 5s ease;
+}
+
+.small-screens img {
+    height: 70px;
+    animation: smallScreenAnimation 4s;
+}
+
+.middle-container img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes smallScreenAnimation {
+    from {
+        padding-left: 50px;
+    }
+    to {
+        padding-left: 0px;
+    }
+}
+
+
+
+
