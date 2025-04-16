@@ -1,0 +1,100 @@
+* {
+    font-family: Garamond;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+}
+
+header h2{
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    height: 600px;
+}
+
+aside {
+    background-color: coral;
+    width: 20%;
+    height: 695px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    padding: 0px 10px 0px 10px;
+}
+
+.chat-container {
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+
+.jolanta-container, .krzysiek-container {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+
+.jolanta-container {
+    display: flex;
+    align-items: center;
+    background-color: #EEE;
+}
+
+.jolanta-container img {
+    float: left;
+}
+
+.krzysiek-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #CCC;
+    text-align: right;
+}
+
+.krzysiek-container img {
+    float: right;
+}
+
+button {
+    background-color: tomato;
+    border: 1px solid darkred;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 500px;
+}
+
+footer h5 {
+    margin: 0;
+}
+
+
+
