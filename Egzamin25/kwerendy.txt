@@ -1,0 +1,7 @@
+SELECT Data, Temat FROM szkolenia ORDER BY Data ASC;
+
+SELECT Data, Temat, Imie, Nazwisko FROM szkolenia S INNER JOIN trenerzy T ON S.Id_trenera = T.Id;
+
+SELECT Imie, Nazwisko, COUNT(S.Id) FROM szkolenia S INNER JOIN trenerzy T ON S.Id_trenera = T.Id GROUP BY T.Id;
+
+ALTER TABLE zapisy CHANGE COLUMN Id_klienta Id_sluchacza INT;
