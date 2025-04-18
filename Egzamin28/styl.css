@@ -1,0 +1,55 @@
+body {
+    font-family: Georgia;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+}
+
+.left-container, .middle-container {
+    width: 30%;
+    height: 350px;
+}
+
+.left-container {
+    background-color: #A26475;
+}
+
+.middle-container {
+    background-color: #824555;
+}
+
+.right-container {
+    background-color: #A26470;
+    width: 40%;
+    height: 350px;
+    overflow: auto;
+}
+
+
+img {
+    float: left;
+    width: 50px;
+}
+
+table, p, dt {
+    margin: 10px;
+}
+
+dl {
+    padding-top: 20px;
+}
+
+td, th {
+    border: 3px solid #824555;
+    padding: 5px;
+}

@@ -1,0 +1,7 @@
+SELECT pseudonim FROM zawodnicy WHERE data_zdobycia >= '2020-07-01' and data_zdobycia <= '2020-07-31';
+
+SELECT pseudonim, tytul FROM zawodnicy WHERE klasa = '3A' and tytul != '';
+
+SELECT pseudonim, klasa, ranking FROM zawodnicy ORDER BY ranking LIMIT 10;
+
+SELECT pseudonim, data_zdobycia, DATEDIFF(CURRENT_DATE(), data_zdobycia) AS 'dni' FROM zawodnicy WHERE tytul != '';
