@@ -30,6 +30,7 @@ header > section {
 main {
     display: flex;
     flex-direction: row;
+    background-color: #E1E1E1;
 }
 
 main > section {
