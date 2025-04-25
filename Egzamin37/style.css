@@ -1,0 +1,54 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    background-color: lightsalmon;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.top-left-container {
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+
+.bottom-left-container {
+    background-color: darksalmon;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+
+.right-container {
+    background-color: darksalmon;
+    width: 70%;
+    height: 500px;
+    overflow: auto;
+    float: right;
+}
+
+img {
+    width: 100%;
+}
+
+.right-container p {
+    font-style: italic;
+    font-size: 200%;
+    padding: 10px;
+}
+
+.right-container p:hover {
+    color: ghostwhite;
+}
+
+table, td {
+    border: 1px dotted maroon;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
