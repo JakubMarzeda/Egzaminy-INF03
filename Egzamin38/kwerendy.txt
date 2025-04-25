@@ -1,0 +1,4 @@
+SELECT imie, nazwisko, adres, miasto, czyRODO, czyBadania FROM pracownicy WHERE id = 2;
+SELECT COUNT(*) FROM pracownicy;
+SELECT id, imie, nazwisko FROM pracownicy WHERE id = 2;
+SELECT P.id, nazwa, opis FROM pracownicy P INNER JOIN stanowiska S ON P.stanowiska_id = S.id WHERE P.id = 2;
