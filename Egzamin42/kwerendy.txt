@@ -1,0 +1,4 @@
+SELECT haslo FROM uzytkownicy WHERE login = 'Justyna';
+SELECT COUNT(*) FROM dane;
+SELECT login, rok_urodz, przyjaciol, hobby, zdjecie FROM uzytkownicy U INNER JOIN dane D ON U.id = D.id WHERE login = 'Justyna';
+ALTER TABLE dane ADD COLUMN stanowisko TEXT;
