@@ -1,0 +1,4 @@
+SELECT imie, nazwisko, punkty FROM klienci ORDER BY punkty DESC LIMIT 3;
+SELECT nazwa, COUNT(K.id) FROM typy T INNER JOIN klienci K ON T.id = K.Typy_id GROUP BY nazwa;
+SELECT zdjecie, imie, opinia FROM klienci K INNER JOIN opinie O ON K.id = O.Klienci_id INNER JOIN typy T ON K.Typy_id = T.id WHERE T.id IN (2, 3);
+ALTER TABLE klienci ADD COLUMN adres VARCHAR(50);
