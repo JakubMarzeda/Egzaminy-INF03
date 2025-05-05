@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styl2.css">
 </head>
 <body>
+    <h1>Events</h1> 
     <section class="events-container">
-    <h1>Events</h1>
     <?php
         $conn = new mysqli("localhost", "root", "", "wydarzenia");
         $category_id = $_GET["category"];
