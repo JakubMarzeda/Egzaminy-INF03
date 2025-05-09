@@ -1,0 +1,4 @@
+SELECT id, nazwa, potoczna FROM grzyby WHERE jadalny = 1;
+SELECT potoczna, R.nazwa FROM grzyby G INNER JOIN rodzina R ON G.rodzina_id = R.id INNER JOIN potrawy P ON G.potrawy_id = P.id WHERE P.nazwa = 'zupa';
+SELECT nazwa_pliku, nazwa FROM grzyby;
+ALTER TABLE rodzina ADD COLUMN opis TEXT;
