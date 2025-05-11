@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(176, 196, 222);
+    padding: 50px;
+    text-align: center;
+}
+
+.left-container {
+    float: left;
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 80%;
+}
+
+.right-container {
+    float: right;
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 20%;
+}
+
+main img {
+    padding: 3px;
+    border: 1px dashed blue;
+    border-radius: 10px;
+}
+
+.left-container img {   
+    height: 40%;
+}
+
+.left-container img:hover {
+    border: 1px solid white;
+}
+
+footer {
+    clear: both;
+}
+
+header > h2 {
+    margin: 0;;
+}
