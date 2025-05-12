@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochamy kawę</title>
+    <link rel="stylesheet" href="styl.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <section class="top-container">
+      <menu>
+        <a href="index.html">Strona główna</a>
+        <a href="zamowienia.html">Zamówienia</a>
+        <a href="blog.html">Blog</a>
+        <a href="http://gatunki-kawy.pl/">Gatunki kawy</a>
+      </menu>
+      <section class="logo-container">
+        <img src="logo.png" alt="Kawa" />
+      </section>
+    </section>
+    <header>
+      <h1>Sklep z kawą</h1>
+    </header>
+    <section class="left-container">
+      <label for="number-coffee">Podaj numer kawy: </label
+      ><input type="number" name="number-coffee" id="number-coffee" /><br />
+      <label for="weight-coffee">Podaj wagę w dekagramach: </label
+      ><input type="number" name="weight-coffee" id="weight-coffee" /><br />
+      <button onclick="orderCoffee()">Zamów</button>
+      <p id="result"></p>
+    </section>
+    <section class="right-container">
+      <h3>Oferta</h3>
+      <ul>
+        <li>Arabica</li>
+        <li>Robusta</li>
+        <li>bezkofeinowa</li>
+        <li>zielona</li>
+      </ul>
+    </section>
+    <footer>Stronę przygotował: 00000000</footer>
+  </body>
+</html>

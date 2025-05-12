@@ -1,0 +1,70 @@
+body {
+    font-family: Garamond;
+    margin: 0;
+    padding: 0;
+}
+
+menu {
+    float: left;
+    background-color: olive;
+    width: 75%;
+    height: 110px;
+    margin: 0;
+}
+
+.top-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    float: right;
+    background-color: olive;
+    width: 25%;
+    height: 110px;
+}
+
+
+header, footer {
+    background-color: SaddleBrown;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.left-container, .right-container {
+    background-color: wheat;
+    width: 50%;
+    height: 450px;
+    font-size: 150%;
+}
+
+.left-container {
+    float: left;
+    text-align: center;
+}
+
+.right-container {
+    float: right;
+}
+
+h1 {
+    letter-spacing: 12px;
+}
+
+a {
+    color: lightgray;
+    margin: 30px;
+    font-size: 150%;
+    line-height: 110px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+li:nth-child(3) {
+    text-decoration: line-through;
+}
