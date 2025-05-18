@@ -1,0 +1,21 @@
+Cel:
+Stwórz stronę HTML z:
+
+Przyciskami (zmiana tekstu po kliknięciu).
+
+Polami tekstowymi (zmiana koloru ramki przy focusie).
+
+Selectem (zmiana koloru tekstu w zależności od wyboru).
+
+Checkboxami (sprawdzenie zaznaczenia i wyświetlenie komunikatu).
+
+Wymagania:
+Kliknięcie w przycisk wyświetla tekst z pola w alercie.
+
+Zmiana w select zmienia kolor tekstu.
+
+Kliknięcie w checkbox wyświetla komunikat, czy jest zaznaczony.
+
+Focus na polu tekstowym zmienia kolor ramki na niebieski.
+
+Po odznaczeniu checkboxa zmienia się tekst przycisku.

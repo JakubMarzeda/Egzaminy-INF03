@@ -1,0 +1,4 @@
+CREATE USER 'Agnieszka'@'localhost' IDENTIFIED BY 'haslo4';
+SELECT AVG(rocznik) FROM samochody WHERE marka = 'opel';
+SELECT S.marka, K.imie FROM wypozyczenia W INNER JOIN samochody S ON W.samochody_id = S.id INNER JOIN klienci K ON W.klienci_id = K.id;
+ALTER TABLE klasa DROP COLUMN cena;

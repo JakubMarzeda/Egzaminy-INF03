@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="left-container">
+        <button onclick="clickedButton()">Kliknij</button><br>
+        <input type="text" onchange="changeBackgroundColor(this.value)"><br>
+        <select name="" id="" onchange="changeTextColor(this.value)">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+        </select><br>
+        <input type="radio" name="color" value="red" onclick="changeHeaderText(this.value)">Red
+        <input type="radio" name="color" value="blue" onclick="changeHeaderText(this.value)">Blue
+        <input type="radio" name="color" value="green" onclick="changeHeaderText(this.value)">Green
+        <br>
+        <input type="checkbox" checked onchange="isChecked(this.checked)">
+    </section>
+    <section class="right-container" id="rigt-container">
+        <h1 id="header">Header</h1>
+        <p id="text">Siema to ja kuba ten text będzie miał modyfikowany kolor</p>
+        <p id="ischecked"></p>
+    </section>
+
+    <script>
+        clickedButton = () => {
+            alert("Button clicked");
+        } 
+
+        changeBackgroundColor = (color) => {
+            document.getElementById("rigt-container").style.backgroundColor = color;
+        }
+
+        changeTextColor  = (color) => {
+            document.getElementById("text").style.color = color;
+        }
+
+        changeHeaderText = (color) => {
+            document.getElementById("header").style.color = color;
+        }
+
+        isChecked = (isChecked) => {
+            if (isChecked) {
+                document.getElementById("ischecked").innerText = "Checkbox jest zaznaczony";
+            } else {
+                document.getElementById("ischecked").innerText = "Checkbox nie jest zaznaczony";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+💻 Zadania z PHP (głównie cookies)
+Zadanie 1: Personalizacja strony (cookies)
+Stwórz stronę, która pozwala użytkownikowi wybrać motyw kolorystyczny (np. jasny/ciemny).
+
+Po wybraniu motywu zapisz go w ciasteczku (setcookie()).
+
+Po ponownym otwarciu strony, motyw zostaje automatycznie załadowany na podstawie ciasteczka.
+
+Uwzględnij możliwość zmiany motywu w dowolnym momencie.
+
+Zadanie 2: Licznik odwiedzin (cookies)
+Stwórz skrypt liczący liczbę odwiedzin użytkownika.
+
+Po wejściu na stronę zwiększaj licznik w ciasteczku.
+
+Wyświetl użytkownikowi komunikat typu:
+
+"To Twoja pierwsza wizyta!"
+
+"Odwiedziłeś tę stronę już X razy!"
+
+Jeśli ciasteczko nie istnieje, zainicjuj licznik na 1.
+
+Zadanie 3: Formularz logowania z zapamiętywaniem (cookies)
+Stwórz prosty formularz logowania z opcją "Zapamiętaj mnie".
+
+Jeśli użytkownik zaznaczy checkbox, zapisz login w ciasteczku.
+
+Przy ponownym wejściu na stronę wczytaj login z ciasteczka i automatycznie wypełnij pole.
+
+Dodaj przycisk "Wyloguj", który usuwa ciasteczko.
+
+Zadanie 4: Koszyk na ciasteczkach
+Stwórz prosty koszyk zakupowy:
+
+Dodawaj produkty do koszyka (np. klikając na przyciski przy produktach).
+
+Przechowuj listę produktów w ciasteczkach.
+
+Wyświetl zawartość koszyka na osobnej stronie.
+
+Umożliwiaj usunięcie produktu z koszyka.
+
+🌐 Zadania z JavaScript (akcje, eventy)
+Zadanie 5: Interaktywna lista zakupów
+Stwórz aplikację, która:
+
+Pozwala użytkownikowi dodawać i usuwać produkty z listy.
+
+Każdy dodany produkt powinien mieć przycisk "Usuń".
+
+Zastosuj lokalne przechowywanie danych w localStorage, aby lista była dostępna po odświeżeniu strony.
+
+Zadanie 6: Ankieta na stronie (AJAX)
+Utwórz prostą ankietę (np. "Czy lubisz programowanie?").
+
+Po wysłaniu odpowiedzi, zapisuj ją do pliku JSON za pomocą PHP (serwer).
+
+Odczytuj wyniki w czasie rzeczywistym dzięki AJAX w JS.
+
+Prezentuj wyniki w formie wykresu (np. kołowego).
+
+Zadanie 7: Aplikacja "Quiz" z podsumowaniem wyników
+Stwórz quiz z kilkoma pytaniami jednokrotnego wyboru.
+
+Zapisz wyniki do ciasteczka, aby były dostępne po ponownym załadowaniu strony.
+
+Wyświetl podsumowanie wyników i możliwość ponownego podejścia.
+
+Zadanie 8: Walidacja formularza w czasie rzeczywistym
+Utwórz formularz rejestracyjny (imię, email, hasło).
+
+Waliduj pola w JS:
+
+Email - poprawny format
+
+Hasło - minimum 8 znaków, jedna wielka litera, cyfra
+
+Wyświetlaj błędy w czasie rzeczywistym pod polem, które zawiera błąd.
+
+Zadanie 9: Aplikacja Todo z edycją
+Lista zadań, gdzie można:
+
+Dodawać nowe zadania
+
+Edytować istniejące
+
+Usuwać zadania
+
+Zastosuj localStorage do zapisywania listy.
+
+Daj możliwość oznaczania zadania jako wykonane.
+
+Zadanie 10: Kalkulator walutowy (API + AJAX)
+Stwórz kalkulator walutowy, który:
+
+Pozwala wybrać waluty do konwersji
+
+Odczytuje aktualne kursy z zewnętrznego API
+
+Wyświetla przeliczoną kwotę w czasie rzeczywistym po wpisaniu wartości
+

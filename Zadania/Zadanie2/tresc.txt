@@ -1,0 +1,11 @@
+PHP i Cookies - Logowanie z Dark/Light Mode
+Założenia:
+Formularz logowania z loginem i hasłem.
+
+Po zalogowaniu przekierowanie na stronę główną (header() w PHP).
+
+Przycisk do zmiany trybu (jasny/ciemny) na stronie głównej.
+
+Zapis wyboru trybu w ciasteczkach (setcookie() w PHP).
+
+Tryb zostaje zapamiętany po ponownym otwarciu strony.

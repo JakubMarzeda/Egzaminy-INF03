@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: "roboto";
+    display: flex;
+}
+
+.left-container {
+    width: 50%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.right-container {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+p {
+    font-size: 200%;
+}
