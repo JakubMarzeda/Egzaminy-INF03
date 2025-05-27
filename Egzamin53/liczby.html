@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciągi liczbowe</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <section class="header-container">
+        <header class="first-header">
+            <h2>Poznaj ciągi liczbowe</h2>
+        </header>
+        <header class="second-header">
+            <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+        </header>
+        <header class="third-header">
+            <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+        </header>
+        <header class="fourth-header">
+            <img src="obraz1.png" alt="Fibonacci">
+        </header>
+    </section>
+    <main>
+        <section class="left-container">
+            <ol>
+                <li>ciągi arytmetyczne</li>
+                <li>ciągi geometryczne</li>
+                <li>ciąg Fibonacciego</li>
+            </ol>
+        </section>
+        <section class="right-container">
+            <h2>Generowanie ciągu arytmetycznego</h2>
+            <label for="a">Pierwszy wyraz A1: </label><input type="number" name="a" id="a"><br>
+            <label for="r">Różnica ciągu R: </label><input type="number" name="r" id="r"><br>
+            <label for="n">Liczba wyrazów w ciągu N: </label><input type="number" name="n" id="n"><br>
+            <button onclick="generujCiag()">Generuj Ciąg</button>
+            <p id="wynik"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Autor: 07231510678</p>
+    </footer>
+
+    <script>
+        generujCiag = () => {
+            let a1 = Number(document.getElementById("a").value);
+            const r = Number(document.getElementById("r").value);
+            const n = Number(document.getElementById("n").value);
+            let wynik = document.getElementById("wynik");
+
+            let tab = [];
+            for (let i = 0; i < n; i++) {
+                tab.push(a1)
+                a1 += r;
+            }
+            wynik.innerText = "Ciąg arytmetyczny zawiera wyrazy: " + tab.join(", ")
+        }
+    </script>
+</body>
+</html>
