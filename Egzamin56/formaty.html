@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1>Formatowanie dokumentów HTML</h1>
+    </header>
+    <section class="top-container">
+        <section class="left-top-container">
+            <h2>Przykład listy - hobby</h2>
+            <ul>
+                <li>muzyka</li>
+                <li>turystyka
+                    <ol>
+                        <li>góry</li>
+                        <li>jeziora</li>
+                        <li>na rowerze</li>
+                    </ol>
+                </li>
+                <li>książki</li>
+            </ul>
+        </section>
+        <section class="middle-top-container">
+            <h2>Przykład tabeli - rozkład dnia</h2>
+            <table>
+                <tr>
+                    <th>Pora dnia</th>
+                    <th>obowiązki</th>
+                </tr>
+                <tr>
+                    <td>rano</td>
+                    <td>nauka</td>
+                </tr>
+                <tr>
+                    <td>południe</td>
+                    <td>zajęcia dodatkowe</td>
+                </tr>
+                <tr>
+                    <td>popołudnie</td>
+                    <td rowspan="2">moje hobby</td>
+                </tr>
+                <tr>
+                    <td>wieczór</td>
+                </tr>
+            </table>
+        </section>
+        <section class="right-top-container">
+            <img src="napisy.png" alt="technologia web">
+        </section>
+    </section>
+    <main>
+        <p>Podaj rozmiar w <input id="font-size" type="number">%</p>
+        <p>
+            <select name="typ-tekstu" id="llista" onchange="zmienStylTekstu()">
+                <option value="normal">Prosty</option>
+                <option value="italic">Kursywa</option>
+            </select>
+        </p>
+        <p>Jakim kolorem sformatować tekst? Wybierz przycisk</p>
+        <section class="button-container">
+            <button type="submit" id="red" onclick="ustawKolor()"></button>
+            <button type="submit" id="green" onclick="ustawKolor()"></button>
+            <button type="submit" id="blue" onclick="ustawKolor()"></button>
+        </section>
+        <p id="format-text">To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
+    </main>
+    <footer>
+        <p>Formatowaniem zajmował się: <em>07231510678</em></p>
+        <a href="formatowanie.pl" target="_blank">Odwiedź także</a>
+    </footer>
+    <script>
+        const przycisnietePrzyciski = document.querySelectorAll("button[type='submit']");
+
+        zmienRozmiarTekstu = () => {
+            const rozmiar = document.getElementById("font-size").value;
+            document.getElementById("format-text").style.fontSize = `${rozmiar}%`;
+        }
+
+        zmienStylTekstu = (styl) => {
+            document.getElementById("format-text").style.fontStyle = styl;
+        }
+
+        ustawKolor = (kolor) => {
+            document.getElementById("format-text").style.color = kolor;
+            zmienRozmiarTekstu();
+            const styl = document.getElementById("lista").value;
+            zmienStylTekstu(styl);   
+        }
+        
+        przycisnietePrzyciski.forEach(element => {
+            element.addEventListener("click", () => {
+                ustawKolor(element.id)
+            });
+        })
+    </script>
+</body>
+</html>
