@@ -1,0 +1,45 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+}
+
+form {
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 60px;
+}
+
+.left-container, .middle-container {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    height: 350px;
+    width: 25%;
+}
+
+.right-container {
+    background-color: teal;
+    height: 350px;
+    width: 50%;
+}
+
+footer {
+    background-color: darkcyan;
+    color: white;
+    padding: 40px;   
+}
+
+ul {
+    border: 4px dotted rgb(127, 255, 212);
+}

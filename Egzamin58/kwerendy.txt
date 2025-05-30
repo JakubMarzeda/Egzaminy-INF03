@@ -1,0 +1,4 @@
+SELECT id, gatunek, wystepowanie FROM zwierzeta WHERE Odzywianie_id = 4;
+SELECT gatunek, rodzaj FROM zwierzeta Z JOIN odzywianie O ON Z.Odzywianie_id = O.id;
+SELECT COUNT(*) FROM zwierzeta WHERE Odzywianie_id = 1;
+CREATE USER 'JanKowalski' IDENTIFIED BY 'J4nKow';
