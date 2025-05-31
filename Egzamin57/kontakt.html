@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usługi informatyczne</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="top-container">
+        <section class="logo-container">
+          <img src="logo.png" alt="logo firmy" />
+        </section>
+        <nav>
+          <a href="index.html">O nas</a>
+          <a href="uslugi.html">Usługi</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </section>
+      <header>
+        <img src="animacja.gif" alt="" />
+      </header>
+      <main>
+        <hr />
+        <h2>Kontakt</h2>
+        <table>
+          <tr>
+            <td>Imię:</td>
+            <td><input id="name" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Nazwisko:</td>
+            <td><input id="lastname" type="text" /></td>
+          </tr>
+          <tr>
+            <td>E-mail:</td>
+            <td><input id="email" type="text" /></td>
+          </tr>
+          <tr>
+            <td>Usługa:</td>
+            <td><textarea name="" id="service"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" name="" id="read-regulamin" />Zapoznałam/em
+              się z regulaminem
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="reset" onclick="reset()">Resetuj</button
+              ><button type="submit" onclick="przeslij()">Prześlij</button>
+            </td>
+          </tr>
+        </table>
+        <p id="informacja"></p>
+        <hr />
+      </main>
+      <footer>
+        <p>Autor strony: <strong>Jakub M</strong></p>
+      </footer>
+    </section>
+    <script>
+        reset = () => {
+            document.getElementById("name").value = "";
+            document.getElementById("lastname").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("service").value = "";
+        }
+        przeslij = () => {
+            const imie = document.getElementById("name").value;
+            const nazwisko = document.getElementById("lastname").value;
+            const email = document.getElementById("email").value;
+            const usluga = document.getElementById("service").value;
+            const regulamin = document.getElementById("read-regulamin");
+            const informacja = document.getElementById("informacja");
+            let odpowiedz = "";
+            if (regulamin.checked) {
+                odpowiedz = `${imie.toUpperCase()} ${nazwisko.toUpperCase()}<br>Treść Twoje sprawy: ${usluga}<br>Na podany e-mail zostanie wysłana oferta.`;
+                informacja.style.color = "black";
+                informacja.innerHTML = odpowiedz;
+            } else {
+                odpowiedz = "Musisz zapoznać się z regulaminem";
+                informacja.style.color = "red";
+                document.getElementById("informacja").innerText = odpowiedz;
+            }
+        };
+    </script>
+  </body>
+</html>
