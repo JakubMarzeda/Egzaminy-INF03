@@ -1,0 +1,77 @@
+* {
+    font-family: Georgia;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+main {
+    display: flex;
+}
+
+.left-container, .middle-container, .right-container {
+    background-color: lightsalmon;
+    height: 527px;
+}
+
+.left-container, .right-container {
+    width: 15%;
+}
+
+.middle-container {
+    width: 70%;
+}
+
+.miniatury-container {
+    background-color: maroon;
+    height: 70px;
+}
+
+button {
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+.miniatury-container img {
+    height: 70px;
+    animation: moveImgs 4s;
+}
+
+@keyframes moveImgs {
+    from {
+        padding-left: 50px;
+    } to {
+        padding-left: 0px;
+    }
+}
+
+main img {
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+
+main img:hover {
+    animation: scaleImg 5s;
+}
+
+@keyframes scaleImg {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.2);
+    }
+}
