@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Efekty na obrazach</h2>
+    </header>
+    <main>
+      <section class="left-top-container">
+        <img src="pszczola.jpg" id="pszczola" alt="pszczoła na fioletowym kwiatku" />
+        <section>
+            <input type="radio" name="styl" id="blur" /> <label for="blur">Blur</label>
+        </section>
+        <section>
+            <input type="radio" name="styl" id="sepia" /> <label for="sepia">Sepia</label>
+        </section>
+        <section>
+            <input type="radio" name="styl" id="negatyw" /> <label for="negatyw">Negatyw</label>
+        </section>
+        <button onclick="changeImgStyle()">Zastosuj</button>
+      </section>
+      <section class="right-top-container">
+        <img src="pomarancza.jpg" id="pomarancza" alt="drzwo pomarańczy" />
+        <section class="button-container">
+            <button onclick="colorfull()">Kolorowy</button>
+            <button onclick="colorless()">Czarno-biały</button>
+        </section>
+      </section>
+      <section class="left-bottom-container">
+        <img src="owoce.jpg" id="owoce" alt="Kosz pełen owoców" />
+        <input type="range" name="" id="opacity" min="0" max="100" value="100" />
+        <button onclick="setOpacity()">Zastosuj</button>
+      </section>
+      <section class="right-bottom-container">
+        <img src="zolw.jpg" id="zolw" alt="Żółw w wodzie" />
+        <input type="range" name="" id="brightness" min="0" max="250" />
+        <button onclick="setBrightness()">Zastosuj</button>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a href="https://www.css.com/" target="_blank"
+          >Zobacz inne efekty obrazu</a
+        >
+      </p>
+      <p>Stronę wykonał: Jakub M</p>
+    </footer>
+
+    <script>
+      changeImgStyle = () => {
+        const img = document.getElementById("pszczola");
+        const blur = document.getElementById("blur").checked;
+        const sepia = document.getElementById("sepia").checked;
+        const negatyw = document.getElementById("negatyw").checked;
+
+        let filter = "";
+
+        if (blur) {
+            filter += "blur(8px)";
+        }
+        if (sepia) {
+            filter += "sepia(100%)";
+        }
+        if (negatyw) {
+            filter += "invert(100%)";
+        }
+        img.style.filter = filter;
+      };
+
+
+      colorfull = () => {
+        document.getElementById("pomarancza").style.filter = "none";
+      };
+
+      colorless = () => {
+        document.getElementById("pomarancza").style.filter = "grayscale(100%)";
+      };
+
+      setOpacity = () => {
+        const opacityValue = document.getElementById("opacity").value;
+        document.getElementById("owoce").style.filter = `opacity(${opacityValue}%)`;
+      };
+
+      setBrightness = () => {
+        const opacityValue = document.getElementById("brightness").value;
+        document.getElementById("zolw").style.filter = `brightness(${opacityValue}%)`;
+      };
+    </script>
+  </body>
+</html>
