@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Arial";
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+input {
+    height: 40px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
